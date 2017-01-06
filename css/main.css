@@ -1,0 +1,324 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+body, 
+h1, h2, h3, h4, h5, h6,
+p,
+div,
+span,
+ul,
+li,
+a,
+img,
+header,
+main {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial;
+}
+
+
+header {
+	position: fixed;
+	min-height: 80px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	background-color: #222;
+	font-size: 1.6em;
+	z-index: 11;
+}
+
+#avatar {
+	width: 30%;
+	float: left;
+	/*border: 1px solid black;*/
+	margin-left: 2%;
+	padding-top: 15px;
+}
+
+#nav {
+	height: 50px;
+	width: 60%;
+	float: right;
+	/*border: 1px solid black;*/
+	margin: 16px 4% 0 0;
+	text-align: right;
+}
+
+img {
+	height: 50px;
+	width: 50px;
+	/*border: 1px solid black;*/
+	vertical-align: middle;
+	border-radius: 3px;
+	margin-right: 4%;
+	 transform: rotate(10deg);
+
+}
+
+span {
+	height: 80px;
+	vertical-align: middle;
+}
+
+ul {
+	height: 50px;
+	text-align: right;
+}
+
+li {
+	display: inline-block;
+	padding: 15px 1.5% 15px 1.5%;
+	/*border: 1px solid purple;*/
+	border-radius: 3px;
+	transition: background-color 0.5s ease;
+}
+
+#nav li:hover {
+	background-color: #444;
+}
+
+main {
+	min-height: 800px;
+	background-image: url('../img/sky.jpg');
+	background-size: cover;
+	text-align: center;
+}
+
+main h1 {
+	width: 80%;
+	font-size: 10em;
+	margin: auto;
+	padding: 130px 0 40px 0;
+	line-height: 1.5;
+}
+
+main p {
+	width: 80%;
+	font-size: 5em;
+	margin: 20px auto;
+	padding-bottom: 60px;
+}
+
+main a
+{
+	border: 3px solid #fff;
+	font-size: 2.8em;
+	padding: 1.5% 2.5%;
+	margin-right: 1%;
+}
+
+.key {
+	font-size: 1.6em;
+	width: 100%;
+	text-align: center;
+	background-color: #EFEFEF;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #777;
+    padding: 60px 0;
+}
+
+#center {
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 60px;
+}
+
+.features {
+	font-size: 1.6em;
+	width: 24%;
+	float: left;
+	max-height: 200px;
+	padding: 0 4.5%;
+	text-align: center;
+}
+
+
+.features img, .say img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 30px;
+	text-align: right;
+}
+
+
+h5 {
+	font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.features p {
+	color: #000;
+	padding: 0;
+	text-align: left;
+}
+
+.say {
+	font-size: 1.6em;
+
+	background-color: #EFEFEF;
+	width: 100%;
+	text-align: center;
+}
+
+#center2 {
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 60px;
+}
+
+.people {
+	width: 24%;
+	float: left;
+	padding: 0 4.5%;
+	text-align: center;
+}
+
+.people p {
+	background-color: #fff;
+	padding: 5% 10% 5% 5%;
+	line-height: 1.5;
+	border-radius: 6px;
+	color: #000;
+	text-align: left;
+}
+
+.say span {
+	color: black;
+	background-color: #EFEFEF;
+}
+
+.king {
+	padding-top: 20px;
+	text-align: left;
+}
+
+.king img {
+	border-radius: 100%;
+}
+
+h6 {
+	font-size: 1em;
+	display: inline-block;
+	color: #000;
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+footer {
+	font-size: 1.4em;
+	width: 100%;
+	text-align: center;
+	background-color: #222;
+	padding: 30px 0 40px 0;
+}
+
+footer img {
+	margin: auto;
+	border-radius: 4px;
+}
+
+.img {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+footer p {
+	color: #777;
+	padding: 0.5%;
+	font-weight: 16px;
+}
+
+
+
+@media screen and (max-width: 1120px) {
+
+h3 {
+    padding: 45px 0;
+}
+
+.features {
+	width: 100%;
+	float: none;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.features p {
+	text-align: center;
+}
+
+.say {
+	width: 100%;
+}
+
+.people {
+	width: 100%;
+	float: none;
+	padding: 0 4.5%;
+}
+
+@media screen and (max-width: 780px) {
+
+#avatar {
+	width: inherit;
+	float: none;
+	/*border: 1px solid black;*/
+	margin-left: 0;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#nav {
+	height: 50px;
+	width: 100%;
+	float: none;
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+
+ul {
+	height: 50px;
+	text-align: center;
+}
+
+
+main {
+	min-height: 500px;
+}
+
+main h1 {
+	padding: 150px 0 20px 0;
+	font-size: 4em;
+}
+
+main p {
+	font-size: 2em;
+	padding-bottom: 80px;
+}
+
+main a
+{
+	font-size: 2em;
+}
+
+
