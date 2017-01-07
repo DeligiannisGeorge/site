@@ -1,0 +1,309 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+body, 
+h1, h2, h3, h4, h5, h6,
+p,
+div,
+span,
+ul,
+li,
+a,
+img,
+header,
+main {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+header {
+	height: 80px;
+	background-color: #222;
+	font-size: 1.6em;
+	position: relative; /*//in order to see the dropdown menu*/ 
+	z-index: 16;/*//in order to see the dropdown menu*/ 
+}
+
+header nav {
+	padding-top: 15px;
+}
+
+
+/*/-----------------------------------------------------navber castomiasation---------------------------------------------------*/
+
+/*//-------------------------------------------------------smooth show up-------------------------------------------------------*/
+
+.navbar {
+	background: #222;
+	position: static; 
+    width: 100%;
+    top: -80px;
+}
+
+.affix {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    -webkit-transition: all 1s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+/*//----------------------------------------------------avatar img + My website-------------------------------------------------*/
+header img {
+	height: 50px;
+}
+
+a.navbar-left {
+	text-decoration: none;
+	color: #fff;
+}
+
+  .affix {
+    width: 100%;
+    z-index:3333;
+    min-height: 80px;
+  }
+
+
+
+/*//-----------------------------------------------------nav menu customisation------------------------------------------------*/
+.navbar-inverse {
+	border: 0;
+}
+
+ul.dropdown-menu {
+    color: black; 
+    background-color: #222; 
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    background-color: #444;
+}
+
+/*/------------------------------------------------------carousel-customisation-------------------------------------------------*/
+
+.carousel-inner .item img {
+	width: 100%
+    margin: auto;
+}
+
+.carousel-inner {
+	background-color: #fff;
+}
+
+.carousel-control.left {
+	background-image: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+.glyphicon-chevron-left:before {
+	color: #fff;
+}
+
+.glyphicon-chevron-right:before {
+	color: #fff;
+}
+
+/*//----------------------------------------------------carousel-castomasation text-----------------------------------------------------*/
+main {
+	text-align: center;
+}
+
+.textslider {
+	width: 100%;
+	position: absolute;
+	top: -1%;
+	margin: auto;
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+.textslider h1 {
+	padding-top: 5%;
+	font-size: 68px;
+}
+
+.textslider p {
+	padding: 5% 0;
+}
+
+.textslider a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	border: 2px solid #fff;
+	padding: 1%;
+	border-radius: 3px;
+}
+
+
+/*/------------------------------------------------------key features---------------------------------------------------------*/
+
+#key {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 15px;
+}
+
+#key h3 {
+	text-align: center;
+	padding: 25px;
+	font-size: 30px
+}
+
+#easy, #fun, #love {
+	padding: 15px 5px;
+}
+
+#key h5 {
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+/*//----------------------------------------------smooth_minimise_key_images_media_query--------------------------------------*/
+
+#key img {
+	height: 80px;
+	width: 80px;
+	transition: all 1s ease;
+}
+
+								/*-------------------------------key-------------------------------------*/
+#say {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 15px;
+	background-color: #EFEFEF;
+}
+
+#king, #queen, #king2 {
+	padding: 15px 5px;
+}
+
+#say h3 {
+	text-align: center;
+	padding: 25px;
+	font-size: 30px
+}
+
+#say p {
+	padding: 5px 0;
+	margin-bottom: 8px;
+	background-color: #fff;
+	border-radius: 6px;
+}
+
+#say img {
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+}
+
+.malakia {
+	text-align: left;
+	padding-left: 6%;
+}
+
+#say h6 {
+	display: inline-block;
+}
+
+/*-----------------------------------------------------------------------*/
+
+footer {
+	font-size: 1.4em;
+	width: 100%;
+	text-align: center;
+	background-color: #222;
+	padding: 30px 0 10px 0;
+}
+
+footer img {
+	margin: auto;
+	height:50px;
+	width: 50px; 
+	border-radius: 4px;
+
+}
+
+footer p {
+	color: #777;
+	padding: 0.5%;
+	font-weight: 16px;
+}
+
+
+@media screen and (max-width: 930px) {
+
+.textslider {
+	top: 10%;
+}
+
+.textslider h1 {
+	padding-top: 3%;
+	font-size: 40px;
+}
+
+.textslider p {
+	font-size: 25px;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.textslider a
+{
+	font-size: 20px;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+.textslider {
+	top: 7%;
+}
+
+.textslider h1 {
+	padding: 1% 0 1% 0;
+	font-size: 20px;
+}
+
+.textslider p {
+	font-size: 15px;
+	padding-bottom: 0.000001%;
+	padding-top: 1%;
+}
+
+.textslider a
+{
+	font-size: 10px;
+	padding-top: 1%;
+}
+
+.carousel-caption {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#key img {
+	height: 70px;
+	width: 70px;
+}
+
+}
